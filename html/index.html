@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Atividade em Aula - CRUD</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1> Atividade em Aula </h1>
+        <form>
+            <label class="col-form-label">Nome da pessoa:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Ana">
+            <label class="col-form-label">Idade da pessoa:</label>
+            <input type="text" class="form-control" id="idade" placeholder="22">
+            <label class="col-form-label">E-mail da pessoa:</label>
+            <input type="email" class="form-control" id="email" placeholder="ana@gmail.com">
+
+            <button type="button" class="btn btn-secondary mt-4" onclick="_limparTudo()">Limpar</button>
+            <button type="button" class="btn btn-primary mt-4" onclick="_mostra_vetor()">Mostra</button>
+            <button type="button" class="btn btn-primary mt-4" onclick="_push()">Incluir</button>
+            <button type="button" class="btn btn-primary mt-4" onclick="_procura()">Pesquisar</button>
+        
+            <label id="lbl-busca" style="display: none;" class="col-form-label"></label>
+
+            <label id="lbl-nome" style="display: none;" class="col-form-label">Novo Nome da pessoa:</label>
+            <input id="novo_nome" type="text" style="display: none;" class="form-control">
+            <label id="lbl-idade" style="display: none;" class="col-form-label">Nova Idade da pessoa:</label>
+            <input id="nova_idade" style="display: none;" type="text" style="display: none;" class="form-control">
+            <label id="lbl-email" style="display: none;" class="col-form-label">Novo E-mail da pessoa:</label>
+            <input id="novo_email" type="email" style="display: none;" class="form-control">
+            
+            <button id="alterar" type="button" style="display: none;" class="btn btn-primary mt-4" onclick="_alterar()">Alterar</button>
+            <button id="exclui" type="button" style="display: none;" class="btn btn-primary mt-4" onclick="_exclui()">Deletar</button>
+       
+        </form>
+    </div>
+    <div id="resposta" class="mt-4">
+
+    </div>
+    <br><br>
+    <footer style="text-align: center; font-style: oblique; font-weight: bold; color: #007BFF;">© Desenvolvido por Adriano Fernades Silva Santos & Enoque Teixeira Barbosa.</footer>
+
+    <!-- JavaScript proprio -->
+    <script src="..\js\vetor.js"></script>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
